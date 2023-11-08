@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Scramble</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/"><h3 id="logo">Scramble</h3></a>
+    </nav>
+    <main>
+        <div class="player-container">
+            <div id="teamOne" class="team">
+                <h2>Team One</h2>
+            </div>
+            <div id="teamTwo" class="team">
+                <h2>Team Two</h2>
+            </div>
+            <div id="audience" class="team">
+                <h2>Audience</h2>
+            </div>
+        </div>
+    </main>
+    <div class="button-container">
+    
+      <button id="generate" type="button" onclick="generateTeams()">Generate</button>
+      <button id="copy" type="button" onclick="copy()">Copy</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

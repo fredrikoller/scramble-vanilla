@@ -1,0 +1,89 @@
+:root {
+  --dark-red: #100406;
+  --wine-red: #391018;
+  --orange: #e24b16;
+  --yellow: #f9b642;
+  --blue: #082739;
+}
+
+@font-face {
+  font-family: "Melted Monster";
+  src: url("./assets/MeltedMonster.ttf");
+}
+
+@font-face {
+  font-family: "Maiden";
+  src: url("./assets/maiden.ttf");
+}
+
+body {
+  background-color: var(--dark-red);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 20%;
+
+  font-family: "Melted Monster";
+  font-size: 56px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  /* margin: 0 40px; */
+}
+
+button {
+  background-color: var(--yellow);
+  width: 7rem;
+  height: 2.5rem;
+  margin: 1rem;
+  border-style: none;
+  border-radius: 0.3rem;
+}
+
+main {
+  text-align: center;
+}
+
+.player-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  color: white;
+}
+
+.team > p::first-letter {
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.team > h2 {
+  font-family: "Maiden";
+  color: var(--yellow);
+}
+
+.team > p {
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#logo {
+  color: #eee;
+}
+
+h1 {
+  font-family: "Maiden";
+}
