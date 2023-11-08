@@ -38,6 +38,8 @@ function shuffleArray(array) {
 }
 
 function generateTeams() {
+  const copyButton = document.getElementById("copy");
+  copyButton.innerText = "Copy";
   let tempPlayers = shuffleArray(PLAYER_POOL);
   divideArray(tempPlayers);
   updateUI();
@@ -45,6 +47,8 @@ function generateTeams() {
 }
 
 function copy() {
+  const copyButton = document.getElementById("copy");
+  copyButton.innerText = "Copied 👍";
   let copyString =
     "==TEAM 1==\n" +
     teamOne +
@@ -56,6 +60,14 @@ function copy() {
   navigator.clipboard.writeText(copyString);
 }
 
+function clearPlayers(teamElement) {
+  const pElements = teamElement.getElementsByTagName("p");
+  for (let i = pElements.length - 1; i >= 0; i--) {
+    const pElement = pElements[i];
+    pElement.parentNode.removeChild(pElement);
+  }
+}
+
 function updateTeamUI(teamId, players) {
   const teamElement = document.getElementById(teamId);
   clearPlayers(teamElement);
@@ -64,14 +76,6 @@ function updateTeamUI(teamId, players) {
     playerElement.textContent = player;
     teamElement.appendChild(playerElement);
   });
-}
-
-function clearPlayers(teamElement) {
-  const pElements = teamElement.getElementsByTagName("p");
-  for (let i = pElements.length - 1; i >= 0; i--) {
-    const pElement = pElements[i];
-    pElement.parentNode.removeChild(pElement);
-  }
 }
 
 function updateUI() {

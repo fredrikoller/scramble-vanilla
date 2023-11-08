@@ -36,15 +36,15 @@ nav {
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
-  /* margin: 0 40px; */
 }
 
 button {
-  background-color: var(--yellow);
+  background-color: var(--dark-red);
+  color: var(--yellow);
   width: 7rem;
   height: 2.5rem;
   margin: 1rem;
-  border-style: none;
+  border: 2px solid var(--yellow);
   border-radius: 0.3rem;
 }
 
