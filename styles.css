@@ -38,6 +38,17 @@ a {
   color: rgba(0, 0, 0, 0.8);
 }
 
+main {
+  text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
 button {
   background-color: var(--dark-red);
   color: var(--yellow);
@@ -46,10 +57,6 @@ button {
   margin: 1rem;
   border: 2px solid var(--yellow);
   border-radius: 0.3rem;
-}
-
-main {
-  text-align: center;
 }
 
 .player-container {
@@ -73,14 +80,8 @@ main {
     font-family: Arial, sans-serif;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 
-#logo {
+#title {
   color: #eee;
 }
 
